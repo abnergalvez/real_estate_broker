@@ -15,6 +15,13 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('address')->nullable();
+            $table->string('description')->nullable(); 
+            $table->float('total_area')->nullable();
+            $table->float('price'); 
+            $table->string('status'); //sold, for sale, unavailable
+            $table->string('photo_path')->nullable();  
             $table->timestamps();
         });
     }
