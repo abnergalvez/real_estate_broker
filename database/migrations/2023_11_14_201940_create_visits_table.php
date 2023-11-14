@@ -15,6 +15,8 @@ class CreateVisitsTable extends Migration
     {
         Schema::create('visits', function (Blueprint $table) {
             $table->id();
+            $table->dateTime('date');
+            $table->string('status'); //scheduled, visited, canceled
             $table->timestamps();
         });
     }
