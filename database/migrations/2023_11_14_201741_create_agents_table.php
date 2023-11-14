@@ -15,6 +15,9 @@ class CreateAgentsTable extends Migration
     {
         Schema::create('agents', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('rut')->unique(); 
+            $table->string('email')->unique();  
             $table->timestamps();
         });
     }
