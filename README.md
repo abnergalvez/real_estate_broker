@@ -40,7 +40,17 @@ Dependencies: Mysql, Composer and PHP 7.3 or higher.
 
 - With Docker installed run the following commands (inside the application directory):
     ```bash
-    docker-compose up -d
+    docker-compose up -d --build
+    ```
+- At the end of the previous point you must execute the following:
+    ```bash
+    docker-compose exec web bash
+    ```
+- Once inside the container you must execute the following:
+    ```bash
+    php artisan key:generate 
+    
+    php artisan migrate:fresh --seed
     ```
 
 - Access http://localhost:8000/
