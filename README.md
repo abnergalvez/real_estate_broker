@@ -57,9 +57,9 @@ Dependencies: Mysql, Composer and PHP 7.3 or higher.
 - Within the requested requirements, it is assumed that there should be a brokerage agent, who is assigned a property and will assist in the management of the property (visits and sales).
 Also an entity to buy/sell properties for future use.
 
-- As required for the view we used blade and blade components.
-- For the commit management we used "conventional commits" (https://www.conventionalcommits.org/en/v1.0.0/).
-- For the rest of the requirements we used our own classes and methods included in Laravel.
+- As required for the view I used blade and blade components.
+- For the commit management I used "conventional commits" (https://www.conventionalcommits.org/en/v1.0.0/).
+- For the rest of the requirements I used the own classes and methods included in Laravel.
 
 - In future improvements we could include the CRUD needed for agents, sellers and buyers, as well as for the management of visits and purchases and their respective status changes.
 - For now the construction of the relationships is shown by the seeders created and the methods in the models as such.
