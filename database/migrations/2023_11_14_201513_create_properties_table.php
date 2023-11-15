@@ -22,6 +22,9 @@ class CreatePropertiesTable extends Migration
             $table->float('price'); 
             $table->string('status'); //sold, for sale, unavailable
             $table->string('photo_path')->nullable();  
+            //foreings
+            $table->integer('seller_id')->unsigned();
+            $table->integer('agent_id')->unsigned();
             $table->timestamps();
         });
     }

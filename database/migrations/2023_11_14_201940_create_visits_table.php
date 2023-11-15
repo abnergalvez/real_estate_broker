@@ -17,6 +17,9 @@ class CreateVisitsTable extends Migration
             $table->id();
             $table->dateTime('date');
             $table->string('status'); //scheduled, visited, canceled
+            //foreings
+            $table->integer('property_id')->unsigned();
+            $table->integer('buyer_id')->unsigned();
             $table->timestamps();
         });
     }
