@@ -24,7 +24,7 @@ class CreatePropertiesTable extends Migration
             $table->string('photo_path')->nullable();  
             //foreings
             $table->integer('seller_id')->unsigned();
-            $table->integer('agent_id')->unsigned();
+            $table->integer('agent_id')->unsigned()->nullable();
             $table->timestamps();
         });
     }
