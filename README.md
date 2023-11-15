@@ -1,4 +1,4 @@
-# Real Estate Broker  🏷️ [1.0.0]
+# Real Estate Broker  🏷️ [1.0.1]
 
 This is a prototype that showing the first steps for the construction of a system for a real estate brokerage company, which has clients (sellers), with their respective properties, and associated agents and interested buyers and also the management of their visits and shows their relationships.
 
@@ -49,7 +49,7 @@ Dependencies: Mysql, Composer and PHP 7.3 or higher.
 - Once inside the container you must execute the following:
     ```bash
     composer install
-    
+
     php artisan key:generate 
 
     php artisan migrate:fresh --seed
