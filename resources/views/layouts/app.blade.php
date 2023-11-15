@@ -53,14 +53,20 @@
                             @endif
                         @else
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('home') }}">
+                                    Inicio
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('visits.index') }}">
-                                    {{ __('Gestionar Visitas') }}
+                                    Gestionar Visitas
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('purchases.index') }}">
-                                    {{ __('Compra Propiedades') }}
+                                    Compra Propiedades
                                 </a>
                             </li>
 
