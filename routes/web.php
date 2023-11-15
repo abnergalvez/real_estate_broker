@@ -32,4 +32,7 @@ Route::prefix('')->group(function () {
 
 Route::prefix('/admin')->middleware('auth')->group(function (){
     Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::resource('visits', App\Http\Controllers\VisitController::class)->names('visits');
+    Route::resource('purchases', App\Http\Controllers\PurchaseController::class)->names('purchases');
+
 });
