@@ -19,8 +19,8 @@ class CreatePropertiesTable extends Migration
             $table->string('address')->nullable();
             $table->string('description')->nullable(); 
             $table->float('total_area')->nullable();
-            $table->float('price'); 
-            $table->string('status'); //sold, for sale, unavailable
+            $table->integer('price'); 
+            $table->string('status'); //sold, for_sale, unavailable
             $table->string('photo_path')->nullable();  
             //foreings
             $table->integer('seller_id')->unsigned();
