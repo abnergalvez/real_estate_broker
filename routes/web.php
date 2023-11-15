@@ -30,4 +30,6 @@ Route::prefix('')->group(function () {
     Route::post('password/reset', [ResetPasswordController::class, 'reset']);
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('/admin')->middleware('auth')->group(function (){
+    Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
